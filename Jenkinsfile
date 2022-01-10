@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'python --version'
+        sh 'python additionalfile.py'
       }
     }
   }
