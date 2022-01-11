@@ -3,8 +3,10 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        print("Going to test everything now!")
         sh 'python testfile.py'
         sh 'python additionalfile.py'
+        sh 'pytest'
       }
     }
   }
