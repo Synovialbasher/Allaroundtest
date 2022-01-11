@@ -6,6 +6,6 @@ def test01_pytest_selftest():
     assert True
     
 def test02_testfile_output():
-    assert "This is a test file" in os.system('python filetest.py').stdout()
+    assert "This is a test file" in os.system('python testfile.py').stdout()
      
     
