@@ -8,7 +8,6 @@ pipeline {
         echo "Just did the first test file."
         sh 'python additionalfile.py'
         echo "Just did the second test file."
-        sh 'pytest'
         echo "Moving on to the second stage."
       }
     }
