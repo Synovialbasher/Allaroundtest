@@ -16,7 +16,10 @@ pipeline {
     {
       steps {
       echo "Going to run the pytest!"
-      sh 'pytest'
+      withPythonEnv('python') {
+        sh 'pip install pytest'
+        sh 'pytest'
+      }
       }
     }
   }
