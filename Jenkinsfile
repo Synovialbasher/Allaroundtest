@@ -5,9 +5,17 @@ pipeline {
       steps {
         print("Going to test everything now!")
         sh 'python testfile.py'
+        print("Just did the first test file.")
         sh 'python additionalfile.py'
+        print("Just did the second test file.")
         sh 'pytest'
+        print("Moving on to the second stage.")
       }
+    }
+    stage {'Test'}
+    {
+      print("Going to run the pytest!")
+      sh 'pytest'
     }
   }
 }
