@@ -17,8 +17,10 @@ pipeline {
       {
         echo "Going to see python!" 
         sh 'python --version'
-        echo "Going zto see pip!"
+        echo "Going to see pip!"
         sh 'pip --version'
+        echo "Going to try and install pytest"
+        sh 'pip install pytest'
       }
     }
   }
