@@ -11,12 +11,12 @@ pipeline {
         echo "Moving on to the second stage."
       }
     }
-    stage ('Test')
+    stage ('Install pytest')
     {
       steps
       {
-        echo "Going to run the pytest!" 
-        sh 'python -m pytest'
+        echo "Going to install pytest!" 
+        sh 'python3.9 --version'
       }
     }
   }
