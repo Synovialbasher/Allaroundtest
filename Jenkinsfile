@@ -11,12 +11,10 @@ pipeline {
         echo "Moving on to the second stage."
       }
     }
-    stage ('Test')
-    {
+    stage ('Test'){
       steps {
-      echo "Going to run the pytest!"
-        
-        sh 'pytest'
+      echo "Going to run the pytest!"  
+      sh 'pytest'
       }
       }
     }
