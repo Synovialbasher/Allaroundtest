@@ -15,8 +15,10 @@ pipeline {
     {
       steps
       {
-        echo "Going to run the pytest!"  
-        sh 'pytest'
+        echo "Going to run the pytest!" 
+        sh 'pip3 --install --upgrade pip'
+        sh 'pip3 instal numpy pytest'
+        sh 'python -m pytest'
       }
     }
   }
