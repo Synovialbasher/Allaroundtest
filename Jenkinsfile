@@ -15,8 +15,10 @@ pipeline {
     {
       steps
       {
-        echo "Going to install pytest!" 
+        echo "Going to see python!" 
         sh 'python --version'
+        echo "Going zto see pip!"
+        sh 'pip --version'
       }
     }
   }
