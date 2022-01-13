@@ -16,7 +16,7 @@ pipeline {
       steps
       {
         echo "Going to install pytest!" 
-        sh 'python3.9 --version'
+        sh 'python --version'
       }
     }
   }
