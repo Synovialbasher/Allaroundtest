@@ -16,6 +16,7 @@ pipeline {
       steps
       {
         echo "Going to see python!" 
+        sh 'whoami'
         sh 'python --version'
         echo "Going to see pip!"
         sh 'pip --version'
