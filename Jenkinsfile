@@ -1,5 +1,5 @@
 pipeline {
-  agent { any }
+  agent {any}
   stages {
     stage('Build') {
       steps {
@@ -21,7 +21,7 @@ pipeline {
         echo "Going to see pip!"
         sh 'pip --version'
         echo "Going to try and install pytest"
-        sh 'pip install pytest'
+        sh 'sudo pip install pytest'
       }
     }
   }
